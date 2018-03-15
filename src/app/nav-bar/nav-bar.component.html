@@ -1,0 +1,11 @@
+<p>
+  Names
+</p>
+<input [(ngModel)]="inputValue" type="text">
+<p>Your input: {{inputValue}}</p>
+<button name="toggle" (click)="toggleShow()">Toggle Show</button>
+<ul *ngIf="show">
+  <li *ngFor="let sdf of names">
+    {{sdf}}
+  </li>
+</ul>
